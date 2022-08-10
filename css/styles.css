@@ -1,0 +1,659 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;}
+  
+  /* Texto color blanco en partes faltantes */
+  
+
+  body {
+    font-family: "lato", sans-serif;
+    color: white;}
+  
+  /* Hacer todo el texto de los links blanco*/
+
+
+  a {
+    color: black;
+    text-decoration: none;}
+  
+
+
+  .links{
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bolder;}
+
+
+
+  .outline:hover{
+    background: #9867C5;
+    border-radius: 5px;
+    padding: 10px 0px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+  
+
+
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);}
+
+
+
+.intro{
+animation-duration: 7s;
+animation-duration: surgir;
+animation-name: surgir;}
+
+
+
+@keyframes surgir{
+0%{ opacity: 0; }
+100%{opacity: 100;}}
+
+
+  .logo{
+font-family: fantasy;
+font-weight: 50;}
+
+
+
+  .subtit{
+text-align: center;
+color: #6a0c53;
+width: 100%;}
+
+
+  
+  
+  h2 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 10px 0;
+    padding-bottom: 50px;
+    line-height: 5;
+    color: #6a0c53;
+   font-weight: bold;
+   text-align: center;}
+
+
+  
+  p {
+    font-size: 30px;}
+
+
+  
+  /*  imágenes*/
+  img {
+    width: 100%;}
+
+
+
+  .kcups_gif{
+width: 65%;
+border-radius: 20%;}
+
+
+
+  .cakegif{
+
+    width: 65%;
+    height: 300px;
+border-radius: 20%;}
+
+
+
+  .icon_ico{
+width: auto;
+margin: 20px;
+transition: 1s;}
+
+
+
+  .icon_ico:hover{
+    transform: rotatey(180deg);}
+
+
+ 
+
+  /* Remover el estilo a los elementos de una lista */
+
+  li {
+    list-style-type: none;}
+  
+  
+  
+  p {
+    font-size: 20px;
+    margin: 10px 0;}
+
+  /* Centrar elemento y establece un ancho máximo*/
+  
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: visible;}
+
+
+/*  fondo, altura y "padding"*/
+
+
+.navbar {
+  background-color: purple;
+  height: 70px;
+  padding: 0 30px;}
+
+
+
+.navbar ul {
+  background: #9867C5;
+  border-radius: 5px;
+  padding: 10px 0px;}
+
+
+
+.navbar h1 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.2;
+  transform: rotate(-10deg);}
+
+
+
+.navbar .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;}
+
+/* no se apilen los elementos un sobre otro FLEXBOX */
+
+
+.navbar ul {
+  display: flex;}
+
+
+
+/* Cambia el color los dos enlaces a blanco, agrega padding  y margen también */
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  padding: 9px;
+  margin: 0 10px;}
+
+
+
+.titulo-testimonial{
+text-align: center;
+color: #6a0c53;
+font-size: large;
+padding: 5%;
+font-family: fantasy;}
+
+
+/* CAMBIO DE COLOR CUANDO PASA RATON */
+
+
+.navbar a:hover {
+  color: #ffffff;
+  border-radius: 5px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation-name: navegacion;
+  animation-duration: 0.3s;
+  background-color: rgb(101, 0, 101);}
+
+
+
+@keyframes navegacion{
+
+  0%{background-color: rgb(241, 187, 241);}
+  10%{background-color:rgb(227, 163, 227);}
+  20%{background-color:rgb(203, 136, 203);}
+  30%{background-color:rgb(176, 109, 176);}
+  40%{background-color:rgb(160, 88, 160);}
+  50%{background-color:rgb(143, 67, 143);}
+  60%{background-color:rgb(136, 50, 136);}
+  70%{background-color:rgb(129, 37, 129);}
+  80%{background-color:rgb(125, 25, 125);}
+  90%{background-color:rgb(128, 13, 128);}
+  100%{background-color: purple;}}
+
+
+/*   altura de la sección de área de presentacion así como también el 
+color de fondo   */
+
+
+.showcase {
+  height: 300px;
+  background-color: purple;}
+
+
+
+/*  margen bajo el texto */
+
+.showcase p {
+  margin-bottom: 30px;}
+
+
+/* sombra bajo la imágen */
+
+
+.showcase img {
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);}
+
+
+.showcase-form {
+  padding-left: 7px;}
+
+
+.grid {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 60% 40%;}
+
+
+
+.grid-item-1,
+.grid-item-2 {
+  position: relative;
+  top: 50px;
+  padding: auto;}
+
+
+
+.showcase input[type='email'] {
+  padding: 10px 70px 10px 0;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 6px;}
+
+
+
+input:focus{
+  background-color: #c588e1;
+  transition: 5s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;}
+
+
+
+.btn {
+  
+  border-radius: 6px;
+  padding: 12px 20px;
+  background: #9867C5;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);}
+
+
+
+.btn:hover{
+  color: #6a0c53;
+    background-color: #dc55ce;
+  border-radius: 5px;
+  font-style: italic;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+
+
+
+.showcase-form {
+  margin: auto;}
+
+
+
+.little-info {
+  font-size: 15px;
+  font-family: "poppins", sans-serif;}
+
+
+
+.lower-container {
+  margin: 120px auto;
+  padding: 0;
+  max-width: 1400px;}
+
+
+/* Apunta a todos los elementos h3 con clase CSS title */
+
+
+.title {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 10px;
+  padding-top: 10px;}
+
+
+.text {
+  color: black;
+  font-size: 19px;
+  width: 100%;
+  padding: 10px;
+  margin: 0, 20px;
+  text-align: justify;}
+
+
+
+.flex {
+  display: flex;
+  justify-content: space-around;}
+
+
+.stats {
+  padding: 45px 50px;
+  text-align: center;}
+
+
+/* Aplicar margen y ancho */
+
+
+.stat {
+  margin: 0px 20px;
+  text-align: center;
+  width: 800px;
+  background-image: linear-gradient(to right, rgb(171, 170, 171), rgb(186, 137, 186), rgb(239, 156, 221));
+  border-radius: 20px;}
+
+
+
+.stat2 {
+  margin: 0px 20px;
+  text-align: center;
+  width: 800px;
+  background-image: linear-gradient(to right, rgb(209, 173, 213), rgb(252, 179, 252), rgb(191, 159, 186));
+  border-radius: 20px;}
+
+
+
+.image:hover{
+transition: 0.5s;
+transform: rotateZ(5deg);}
+
+
+
+.testimonials {
+  color: rgb(89, 3, 89);
+  padding: 40px;
+  text-align: center;}
+
+
+
+
+/* Envuelve la imagen dentro de una figura circular y define su altura para que tome todo el alto de su elemento padre */
+
+.testimonial img {
+  height: 100%;
+  clip-path: circle();
+  align-items: center;}
+
+/* Alinea el texto al centro */
+
+.testimonial h3{
+text-align: center;}
+
+
+
+/* Crear un grid de tres columnas equidistantes. Definir un espaciado de 40px entre ellas */
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: center;}
+
+
+/* Crear una tarjeta en blanco con sombreado alrededor */
+.card {
+ transition: 1s;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+               7px  7px 20px rgba(0, 0, 0, 0.2);
+               filter: grayscale(90%);}
+
+
+.card:hover{
+transform: scale(1.2,1.2);
+filter: grayscale(0);}
+
+
+
+
+ .circle {
+  background-color: transparent;
+  border:3px solid purple;
+  height:90px;
+  position: relative;
+  top: -30px;
+  left: 120px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:90px;}
+
+
+
+footer {
+  background-color: purple;
+  padding: 20px 10px;}
+
+
+
+footer a {
+  color: white;
+  margin: 0 10px;}
+
+
+
+footer a:hover {
+  color: #9867C5;
+  border-bottom: 2px solid #9867C5;}
+
+
+/* AQUI CUANDO LA PANTALLA NO ES MAYOR A 600 PIXELES */
+
+
+@media only screen and (max-width: 600px) {
+  .grid,
+  .grid-3 {
+    grid-template-columns: 10px;
+    justify-content: center;}
+
+
+
+.stats .flex {
+  flex-direction: column;}
+
+
+.stats {
+  text-align: center;}
+
+
+.image {
+  width: 600px;
+  margin-left: 80px;}
+
+
+.stat {
+  width: 100%;
+  padding-right: 80px;}
+
+  .stat2 {
+    width: 100%;
+    padding-right: 80px;}
+
+
+.circle {
+  background-color: transparent;
+  border:3px solid purple;
+  height:90px;
+  position: relative;
+  top: -30px;
+  left: 270px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:90px;}
+
+
+.showcase {
+  height: auto;
+  text-align: center;}}
+
+
+
+/* aqui cuando la pantalla sea para pantallas grandes */
+
+
+
+@media only screen and (max-width: 992px) {
+  .grid,
+  .grid-3 {
+    grid-template-columns: 1fr;
+    justify-content: center;}
+
+
+
+.stats .flex {
+  flex-direction: column;}
+
+
+.stats {
+  text-align: center;}
+
+
+.image {
+  width: 300px;
+ margin: auto;}
+
+
+.stat {
+  margin-bottom: 50px;
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;}
+
+  .stat2 {
+    margin-bottom: 50px;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;}
+
+
+.circle {
+  background-color: transparent;
+  border:3px solid purple;
+  height:90px;
+  position: relative;
+  top: -30px;
+  left: 370px;
+  right: 370px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:90px;}
+
+
+.showcase {
+  height: auto;
+  text-align: center;}}
+
+
+
+/* MOBILE menos de 576 pixeles */
+
+
+@media only screen and (max-width: 576px) {
+  .navbar {
+    height: 150px;}
+
+  
+
+.navbar .flex {
+  flex-direction: column;}
+
+
+.navbar a:hover {
+  color: white;
+  padding: 10px 10px;}
+
+
+.showcase {
+  height: auto;
+  text-align: center;
+  justify-content: center;}
+
+
+.little-info {
+  font-size: 13px;}
+
+
+
+.image {
+  width: 350px;
+  margin: auto;}
+
+
+.stat {
+  margin-bottom: 50px;}
+
+
+
+ .stat2 {
+    margin-bottom: 50px;}
+
+
+
+.circle {
+    background-color: transparent;
+    border:3px solid purple;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 150px;
+    border-radius:50%;
+    -moz-border-radius:100%;
+    -webkit-border-radius:50%;
+    width:90px;}}
+
+
+/* ESPACIO PARA PRUEBAS */
+
+	
+
+.prueba{
+
+  width: 50%;
+  margin: 20px;
+  transition: 1s;
+  border-radius: 25px;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));}
+
+
+
+.prueba:hover{
+  width: 80%;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  box-shadow: 0px 0px 15px 15px purple;
+  -webkit-box-shadow: 0px 0px 15px 15px rgb(101, 6, 101);
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);}
