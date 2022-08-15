@@ -153,7 +153,7 @@ transition: 1s;}
 
 
 .navbar ul {
-  background: #9867C5;
+ 
   border-radius: 5px;
   padding: 10px 0px;}
 
@@ -187,7 +187,7 @@ transition: 1s;}
 .navbar a {
   color: rgb(255, 255, 255);
   padding: 9px;
-  margin: 0 10px;}
+  margin: 10px 10px;}
 
 
 
@@ -583,7 +583,11 @@ footer a:hover {
 
 @media only screen and (max-width: 576px) {
   .navbar {
-    height: 150px;}
+    height: 150px;
+  width: 100%;
+  display: flex;
+}
+
 
   
 
@@ -657,3 +661,184 @@ footer a:hover {
   -webkit-box-shadow: 0px 0px 15px 15px rgb(101, 6, 101);
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);}
+
+
+
+  /* AQUI ESPACIO PRUEBAS */
+
+  main{
+    background:#d7a5dd;
+    margin:0;
+  padding: 20px;}
+
+
+
+  .form{width:340px;
+    height:600px;
+    background:#e6e6e6;border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;position:relative}
+
+
+  .titucont{margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:purple;
+    border-bottom:3px solid purple;}
+
+
+
+
+
+  .inputcont{width:100%;
+    padding:10px;
+    box-sizing:border-box;background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid purple;}
+
+    
+  .inputcont:focus{border-bottom:2px solid purple}
+
+
+  .pcont:before{content:attr(type);
+    display:block;margin:28px 0 0;
+    font-size:14px;
+    color:purple}
+
+
+  button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid purple;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+  border-radius: 5px;}
+    
+
+
+  button:hover{
+    background: purple;
+    color:#fff}
+
+  
+  .divcont{
+    content:'Hi';position:absolute;
+    bottom: -15px;
+    right:10px;background:#d7a5dd;
+    color:purple;width:320px;
+    padding:16px 4px 16px ;
+    border-radius:6px;font-size:13px;
+    box-shadow:10px 10px 40px -14px #000}
+
+
+  span{margin:5px 3px 0 15px}
+
+  
+  #galeria .col-lg-4{
+
+    margin: 0 !important;
+
+padding: 15px;
+
+  }
+
+  #galeria img{
+    width: 100%;
+    height: 250px;
+    border-radius: 35px;
+    
+  }
+
+  #galeria img:hover{
+    border: 5px solid rgb(255, 255, 255);
+   
+
+
+  }
+
+  .pgal{
+color:  rgb(89, 3, 89);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: medium;
+font-weight: 300;
+
+
+  }
+
+  /* aqui AREA NOSOTROS (SIMPLE) */
+
+
+  .mainnos {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: purple;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  .caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(229, 181, 230);
+    margin: 10px auto;
+    padding: 5px 30px;
+    width: 800px;
+    box-shadow: 0 0 5px black;
+  }
+
+  .hrnos {
+    display: flex;
+    align-items: center;
+  }
+
+  hr {
+    width: 30px;
+    height: 1px;
+    background: black;
+    margin: 0 15px;
+  }
+
+  .h2nos {
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .mision-txt {
+    font-size: 18px;
+    font-weight: 500px;
+    font-style: italic;
+    margin-top: 0;
+  }
+
+  .divnos img {
+    width: 150px;
+    filter: drop-shadow(0 10px 5px rgb(236, 13, 13));
+  }
+
+  .pnos {
+    text-align: justify;
+    color: purple;
+  }
+
+  
+  @media screen and (max-width:820px) {
+    .caja {
+      width: 80%;
+      padding: 5px 30px;
+    }
+  }
